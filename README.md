@@ -1,58 +1,62 @@
-# About Chat App with React Native:
-To build a chat app for mobile devices using React Native. The app will provide users with a chat interface and options to share images and their location. It works on both iOS and Android devices and utilizes Google Firestore/Firebase for storing messages and images. Guest authentication is handled via Google Firebase authentication.
+# Chat App
+A chat app for mobile devices using React Native. The app will provide users with a chat interface and options to share images and their location.
 
-# Features and Requirements:
-## Key Features:
-- A page where users can enter their name and choose a background color for the chat screen
-before joining the chat.
-- A page displaying the conversation, as well as an input field and submit button.
-- The chat must provide users with two additional communication features: sending images
-and location data.
-- Data gets stored online and offline.
+## Features
+- Welcome page where users can enter their name and select background color for the chat screen
+- Real-time messaging, with input field and submit button
+- Option to take photo, access photo library and upload images
+- Users can share location data
+- Data stored online and offline
 
-## Technologies Used:
+## Technologies Used
 - React Native
 - Expo
-- Expo ImagePicker
-- Expo Location
-- Google Firestore/Firebase
-- Gifted Chat Library
-- Android Studio
+- Firebase (Firestore, Cloud Storage, Authentication)
+- Gifted Chat
+- Local storage
+- React Navigation
+- AsyncStorage
 
-## Dependencies:
-- @react-navigation/native: ^6.1.17
-- @react-navigation/native-stack: ^6.9.26
-- expo: ~50.0.13
-- expo-status-bar: ~1.11.1
-- firebase: ^10.3.1
-- react: "18.2.0
-- react-native: 0.73.5
-- react-native-gifted-chat: ^2.4.0
-- react-native-safe-area-context: 4.8.2
-- react-native-screens: ~3.29.0
-- @react-native-async-storage/async-storage: 1.21.0
-- @react-native-community/netinfo: 11.1.0
-- expo-image-picker: ~14.7.1
-- expo-location: ~16.5.5
-- react-native-maps: 1.10.0
+## Installation
 
-### Prerequisites
-- Node.js
+**1. Clone the repository**
+   ```
+   git clone https://github.com/yourusername/chat-app.git
+   ```
 
-### Google Firestore/Firebase
-- create an account and a new project
-- obtain the configuration code, and add it to App.js:
-- set up the database under build --> Firestore Database
-- activate storage
-- change rules to: `allow read, write: if true`
+**2. Navigate to project directory**
+   ```
+   cd chat-app
+   ```
 
-## Start the expo project
-- `npx expo start`
+**3. Install the required dependencies:**
+   ```
+   npm install
+   ```
 
-## Testing Options
-- download and connect the expo app on your mobile device
-- Android Studio (android)
-- Xcode (iOS)
+## Setup
+**1. Ensure correct version of Node installed**
+- Before installing Expo, ensure suitable version of Node installed. At this time, Expo only supports Node 16.. at max, so if have higher version, downgrade to "16.19.0" by running the following:
+```
+nvm install 16.19.0
+nvm use 16.19.0
+nvm alias default 16.19.0
+```
 
-## Author
-- Logan Thomas Stewart
+**2. Create a Firebase Project**
+- Go to the Firebase Console (console.firebase.google.com).
+- Create a new project.
+- Add a Web app to the project and copy the Firebase configuration settings.
+
+**3. Set up Firestore and Storage**
+- In your Firebase console, navigate to Firestore Database and create a new database.
+- Navigate to Storage and set up Firebase Storage.
+
+## Usage
+**1. Run the application**
+   ```
+   npx expo start
+   ```
+
+**2. Open the Expo app on your mobile device or emulator**
+- Scan the QR code displayed in terminal or browser to run the app on your device.
