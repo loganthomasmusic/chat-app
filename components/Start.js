@@ -40,11 +40,11 @@ const Start = ({ navigation }) => {
 
     return (
         <ImageBackground
-            source={require('../img/Background_Image.png')}
+            source={require('../img/bgImage.png')}
             resizeMode="cover"
             style={styles.image}
         >
-            <Text style={styles.title}>Chit Chat!</Text>
+            <Text style={styles.title}>Charli Chat</Text>
             <View style={styles.container}>
                 {/* <Icon source={require('../img/icon.svg')}></Icon> */}
                 <TextInput
